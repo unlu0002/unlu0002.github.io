@@ -1,0 +1,617 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Mobile stylings before media queries for desktop */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+/* vv Heading element styles */
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* ^^ Heading element styles */
+
+.headerclass {
+    background-color: #222222;
+}
+
+/* General container styling class named "pageclass" */
+
+.pageclass {
+    position: relative;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+}
+
+/* Logo background color for mobile version */
+
+.logocontainer {
+    background-color: #C78C06;
+}
+
+.starlogo {
+    background-color: #C78C06;
+    margin-top: 10px;
+}
+
+.starlogo img {
+    /* height: auto; */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logocontainer img {
+    width: auto;
+}
+
+/* Navigation style will be added here according to desktop version, including transition animations in nav lists */
+.navclass {
+    margin: auto;
+}
+
+header ul {
+    color: #C78C06;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+header ul a {
+    color: #C78C06;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    padding: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header ul a:hover {
+    color: #333333;
+    background-color: #C78C06;
+}
+
+header ul a:focus {
+    color: #333333;
+    background-color: #C78C06;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    width: 100%;
+}
+
+.search input {
+    flex: 1
+}
+
+.search input::placeholder {
+    padding-left: 8px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.searchbutton {
+    border: 1px solid #C78C06;
+    background-color: transparent;
+}
+
+.searchbutton i::after {
+    content: "search"; /* Google Material Icon search icon */
+    font-family: 'Material Symbols Outlined', sans-serif;
+    color: #C78C06;
+    /* color: black; */
+    margin: 2px;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+/* Main part stylings begins */
+
+/* Welcome to Three Star Media - white text area class */
+.welcome {
+    color: white;
+    display: flex;
+    /* display might change */
+    align-items: center;
+    justify-content:center ;
+    margin: auto;
+    padding: 0;
+    /* position tbd */
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/main-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Transparent black background behind the white text */
+.welcome .pageclass {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5rem;
+    padding: 5rem;
+}
+
+/* Photos came to side by side, will change that here */
+.welcome img {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 10%;
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    z-index: 50; */
+}
+
+/* Button styling will come in here */
+.mainbutton1 {
+    background-color: #C78C06;
+    border: 0px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 12px;
+    padding: 16px;
+    padding-left: 24px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.mainbutton1:hover {
+    background-color: black;
+    color: white;
+    transition: color 0.3s, background-color 0.3s
+}
+
+.mainbutton1 i {
+    /* color: black; */
+    margin-right: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.mainbutton1 i::after {
+    content: "play_arrow"; /* Google Material Icon arrow icon */
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 2rem;
+    margin-left: 15px;
+    vertical-align: middle;
+    /* color: black; */
+    margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.about {
+    background-color: #FFE6AC;
+    margin: 0;
+    padding: 24px;
+}
+
+.pageclass h2 {
+    margin-bottom: 1rem;
+}
+
+.digital {
+    background-color: #FFE6AC;
+    margin: auto;
+}
+
+.servicessections {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.servicesparent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Black background button style called style 2 */
+.style2 {
+    background-color: #222222;
+    color: white;
+    padding: 1rem;
+}
+
+/* Vision part */
+.visionsection img {
+    position: absolute;
+    /* position: relative; */
+    align-items: center;
+}
+
+.visionsection {
+    color: white;
+    /* position: absolute; */
+    position: relative;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    /* display might change */
+    align-items: center;
+    justify-content:center ;
+    margin: auto;
+    padding: 0;
+    /* position tbd */
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/vision.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Learn more button style called style3 */
+.style3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-color: #C78C06;
+    color: white;
+    padding: 1rem;
+}
+
+/* Team section */
+.teamsection1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE6AC;
+    margin-top: 1rem;
+}
+
+.team-info {
+    margin: 1rem;
+}
+
+.team-info h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.teamsection2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE6AC;
+    margin-top: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #C78C06;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+/* Contact part - put in a grid */
+.contactsection {
+    margin: 12px;
+    margin-top: 4px;
+}
+
+.contactsection h2 {
+    margin: 12px;
+    margin-bottom: 24px;
+}
+
+.contactsection h3 {
+    margin-bottom: 18px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.inputs input {
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.inputs label {
+    margin-bottom: 4px;
+}
+
+textarea {
+    min-height: 150px;
+    margin-bottom: 12px;
+    resize: none;
+}
+
+.sendbutton {
+    background-color: #222222;
+    color: #C78C06;
+    border: 0px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 2px;
+    padding: 12px;
+}
+
+.sendbutton:hover {
+    background-color: black;
+    color: white;
+    transition: color 0.3s, background-color 0.3s
+}
+
+/* Operation part - put in a grid */
+.hoursection {
+    position: relative;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.hoursection h3 {
+    margin-bottom: 16px;
+
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #FFE6AC;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 16px;
+}
+
+/* Location map part - put in a grid */
+.locationsection {
+    position: relative;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.locationsection h3 {
+    margin-bottom: 12px;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* Footer styling*/
+footer {
+    background-color: #222222;
+    color: #C78C06;
+    padding: 12px;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* Add a min-width media query for the screen size of 760px and above */
+@media screen and (min-width: 760px) {
+    .starlogo {
+        background: none;
+    }
+
+    header ul {
+        padding: 18px;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        height: 100%;
+        align-items: center;
+    }
+
+    .headerclass .pageclass {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutparent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aboutparent img, .aboutchildren {
+        /* margin: 1rem; */
+        padding: 1rem;
+    }
+
+    /* Services part grid column of 6 */
+    .servicesparent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .servicesparent div:nth-child(1) {
+        /* Styles for the first div within .servicesparent */
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .servicesparent div:nth-child(2) {
+        grid-column: 4/7;
+        grid-row: 1;
+    }
+
+    .servicesparent div:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .servicesparent div:nth-child(4) {
+        grid-column: 3/5;
+        grid-row: 2;
+    }
+    
+    .servicesparent div:nth-child(5) {
+        grid-column: 5/7;
+        grid-row: 2;
+    }
+
+    /* .printimage {
+        width: 100%;
+        padding: 0%;
+    } */
+
+    .mainbutton1 {
+        vertical-align: middle;
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .style2 {
+        width: 100%;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    /* Could not manage to align button text vertically centered */
+
+    /* Team - reverse order zig zag */
+    .teamsection1, .teamsection2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    /* Images should not overlap in the middle */
+    .teamsection1+.teamsection2 img {
+        width: 50%;
+    }
+
+    .teamsection2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    /* Bottom grid of Contact - Location - Hours table */
+    /* "Contact us" title should be a grid area */
+    
+    .bottomgrid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "xx xx" "a b" "c c"
+    }
+
+    /* Left and right padding should be 0 but does not work */
+    /* .pageclass .bottomgrid {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    } */
+
+    .bottomgrid .contacttitle {
+        grid-area: xx;
+        width: 100%;
+    }
+
+    .bottomgrid .contactsection {
+        grid-area: a;
+        width: 100%;
+    }
+
+    .bottomgrid .locationsection {
+        grid-area: b;
+        width: 100%;
+    }
+
+    .bottomgrid .hoursection {
+        grid-area: c;
+        width: 100%;
+    }
+
+
+    /* .bottomgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a b" "c c"
+    }
+
+    .bottomgrid .contactsection {
+        grid-area: a;
+        width: 100%;
+    }
+
+    .bottomgrid .locationsection {
+        grid-area: b;
+        width: 100%;
+    }
+
+    .bottomgrid .hoursection {
+        grid-area: c;
+        width: 100%;
+    } */
+
+
+}

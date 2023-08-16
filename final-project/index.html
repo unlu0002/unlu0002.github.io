@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- Link to reset.css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- Link to main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <div class="bodydiv">
 
-        <header>
+        <header class="headerclass">
 
-            <section class="headersection">
+            <section class="pageclass">
 
-                <div>
+                <div class="logocontainer">
 
-                    <img src="images/logo.png" alt="The logo of Three Star Media">
+                    <img src="images/logo.png" alt="The logo of Three Star Media" class="starlogo">
 
                 </div>
 
@@ -31,14 +36,24 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li class="searchinput">
-                            <input type="text" placeholder="Search">
+                        <li>
+                            <form class="search" action="">
+
+                                <input type="text" placeholder="Search" />
+
+                                <button type="submit" class="searchbutton">
+                                    <!-- Icon or text for the search button goes here -->
+                                    <i></i>
+                                </button>
+
+                            </form>
+
                         </li>
 
                     </ul>
 
                 </nav>
-
+            
             </section>
 
         </header>
@@ -46,40 +61,39 @@
         <!-- End of header -->
 
         <main>
+            <!-- Unnecessary container deleted -->
+            <div class="welcome">
 
-            <section class="wrapper1"> 
-                <!-- class for the first main part -->
+                <!-- <img src="images/main-banner.jpg" alt="The main banner picture of a cozy office"> -->
 
-                <div class="welcome">
+                <section class="pageclass">
 
-                    <img src="images/main-banner.jpg" alt="The main banner picture of a cozy office">
+                    <h1>
+                        Welcome to Three Star Media
+                    </h1>
 
-                    <section>
+                    <p>
+                        Lorem Ipsum amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet.
+                    </p>
 
-                        <h1>
-                            Welcome to Three Star Media
-                        </h1>
+                    <button class="mainbutton1">
+                        <!-- mainbutton class will be the class for all buttons with this same look -->
+                        <!-- added i for arrow to come after -->
+                        <i>Connect with us</i>
 
-                        <p>
-                            Lorem Ipsum amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet.
-                        </p>
+                    </button>
 
-                        <button class="mainbutton">
-                            <!-- mainbutton class will be the class for all buttons wşth this same look -->
+                </section>
 
-                            Connect with us
+            </div>
 
-                        </button>
+            <div class="about">    
 
-                    </section>
+                <div class="aboutparent">
 
-                </div>
-
-                <div class="aboutus">
-
-                    <img src="images/about-us.jpg" alt="Picture of the play area of the office, with pingpong table">
-                
-                    <section>
+                    <img src="images/about-us.jpg" alt="Picture of the play area of the office, with pingpong table" class="aboutimage">
+                    
+                    <section class="aboutchildren">
 
                         <h2>
                             About Us
@@ -97,9 +111,13 @@
 
                 </div>
 
-            </section>
+            </div>
 
-            <section class="wrapper2">
+        
+
+            <!-- As suggested in the feedback, grouped the parts together -->
+
+            <section class="pageclass">
                 <!-- class for the second main part with services -->
 
                 <div>
@@ -108,123 +126,131 @@
                     </h2>
                 </div>
 
-                <div class="digital">
+                <section class="servicesparent">
+            
+                    <div class="digital"> 
+                        <!-- All the classes in this part grouped together under class:digital -->
 
-                    <img src="images/digital.jpg" alt="A person using smartphone and laptop computer">
+                        <img src="images/digital.jpg" alt="A person using smartphone and laptop computer">
 
-                    <section class="servicessections">
+                        <section class="servicessections">
 
-                        <h3>
-                            Digital Transformation
-                        </h3>
+                            <h3>
+                                Digital Transformation
+                            </h3>
 
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </p>
 
-                        <button class="mainbutton">
-                            Digital Plans
-                        </button>
+                            <button class="mainbutton1 style2">
+                                <i>Digital Plans</i>
+                            </button>
 
-                    </section>
+                        </section>
 
-                </div>
+                    </div>
 
-                <div class="marketing">
+                    <div class="digital">
 
-                    <img src="images/marketing.jpg" alt="A picture of a laptop computer">
+                        <img src="images/marketing.jpg" alt="A picture of a laptop computer">
 
-                    <section class="servicessections">
+                        <section class="servicessections">
 
-                        <h3>
-                            Marketing
-                        </h3>
+                            <h3>
+                                Marketing
+                            </h3>
 
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </p>
 
-                        <button class="mainbutton">
-                            Marketing Plans
-                        </button>
+                            <button class="mainbutton1 style2">
+                                <i>Marketing Plans</i>
+                            </button>
 
-                    </section>
+                        </section>
 
-                </div>
+                    </div>
 
-                <div class="video">
+                    <div class="digital">
 
-                    <img src="images/video.jpg" alt="A picture of a smartphone on hand">
+                        <img src="images/video.jpg" alt="A picture of a smartphone on hand">
 
-                    <section class="servicessections">
+                        <section class="servicessections">
 
-                        <h3>
-                            Video Production
-                        </h3>
+                            <h3>
+                                Video Production
+                            </h3>
 
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </p>
 
-                        <button class="mainbutton">
-                            Video Plans
-                        </button>
+                            <button class="mainbutton1 style2">
+                                <i>Video Plans</i>
+                            </button>
 
-                    </section>
+                        </section>
 
-                </div>
+                    </div>
 
-                <div class="webplans">
+                    <div class="digital">
 
-                    <img src="images/web.jpg" alt="A picture of a smartphone and a smartpen on a notebook">
+                        <img src="images/web.jpg" alt="A picture of a smartphone and a smartpen on a notebook">
 
-                    <section class="servicessections">
+                        <section class="servicessections">
 
-                        <h3>
-                            Web Development
-                        </h3>
+                            <h3>
+                                Web Development
+                            </h3>
 
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </p>
 
-                        <button class="mainbutton">
-                            Web Plans
-                        </button>
+                            <button class="mainbutton1 style2">
+                                <i>Web Plans</i>
+                            </button>
 
-                    </section>
+                        </section>
 
-                </div>
+                    </div>
 
-                <div class="print">
+                    <div class="digital">
 
-                    <img src="images/print.jpg" alt="A picture of newspaper boxes on a street">
+                        <img src="images/print.jpg" alt="A picture of newspaper boxes on a street" class="printimage">
 
-                    <section class="servicessections">
+                        <section class="servicessections">
 
-                        <h3>
-                            Print
-                        </h3>
+                            <h3>
+                                Print
+                            </h3>
 
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </p>
 
-                        <button class="mainbutton">
-                            Print Plans
-                        </button>
+                            <button class="mainbutton1 style2">
+                                <i>Print Plans</i>
+                            </button>
 
-                    </section>
+                        </section>
 
-                </div>
+                    </div>
+
+                </section>
 
             </section>
 
-            <section>
+            <!-- Vision part begins here -->
 
-                <img src="images/vision.jpg" alt="Picture of paper ships">
+            <section class="visionsection">
 
-                <section>
+                <!-- <img src="images/vision.jpg" alt="Picture of paper ships"> -->
+                <!-- CSS background image added -->
+
+                <section class="pageclass">
 
                     <h3>
                         Our Vision
@@ -234,8 +260,8 @@
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
                     </p>
 
-                    <button class="mainbutton">
-                        Learn More
+                    <button class="mainbutton1 style3">
+                        <i>Learn More</i>
                     </button>
 
                 </section>
@@ -244,147 +270,172 @@
         
             <!-- start of the bottom part of the page -->
 
-            <section>
+            <section class="pageclass" id="teamsection">
 
                 <div>
                     <h2>
                         Our Team
                     </h2>
                 </div>
-
-            </section>
-
-            <div>
-            
-                <section>
-
-                    <img src="images/john.jpg" alt="Picture of John Doe">
-
-                    <section>
-
-                        <h3>
-                            John Doe
-                        </h3>
-
-                        <h4>
-                            CEO and Co-Owner
-                        </h4>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        </p>
-
-                    </section>
-
-                </section>
-
-                <section>
-
-                    <img src="images/bob.jpg" alt="Picture of Bob Rite">
-
-                    <section>
-
-                        <h3>
-                            Bob Rite
-                        </h3>
-
-                        <h4>
-                            CFO and Co-Owner
-                        </h4>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        </p>
-
-                    </section>
-
-                </section>
-
-            </div>
-
-            <section>
-
+        
                 <div>
+                
+                    <section class="teamsection1">
 
-                    <h2>Contact us</h2>
+                        <img src="images/john.jpg" alt="Picture of John Doe">
 
-                    <h3>Send us a message</h3>
+                        <section class="team-info">
 
-                    <section class="inputs">
+                            <h3>
+                                John Doe
+                            </h3>
 
-                        <label for="fullname">Full Name</label>
+                            <h4>
+                                CEO and Co-Owner
+                            </h4>
 
-                        <input type="text" name="fullname" id="">
+                            <hr> <!-- Orange line -->
 
-                    </section>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
 
-                    <section class="inputs">
-
-                        <label for="e-mail">e-Mail</label>
-
-                        <input type="text" name="email" id="">
-
-                    </section>
-
-                    <section class="inputs">
-
-                        <label for="message">Message</label>
-
-                        <input type="text" name="message" id="">
+                        </section>
 
                     </section>
 
-                    <button class="sendbutton">
+                    <section class="teamsection2">
 
-                        Send
+                        <img src="images/bob.jpg" alt="Picture of Bob Rite">
 
-                    </button>
+                        <section class="team-info">
+
+                            <h3>
+                                Bob Rite
+                            </h3>
+
+                            <h4>
+                                CFO and Co-Owner
+                            </h4>
+
+                            <hr> <!-- Orange line -->
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+
+                        </section>
+
+                    </section>
 
                 </div>
 
             </section>
 
-            <section>
+            <!-- Contact part begins -->
 
-                <h3>Hours of operation</h3>
+            <div class="pageclass">
 
-                <table>
+                <div class="bottomgrid">
 
-                    <tr>
-                        <th>Days</th>
+                    <h2>Contact us</h2>
+                                    
+                    <!-- Added div part -->
 
-                        <th>Hours</th>
-                    </tr>
+                    <div class="contactsection">
 
-                    <tr>
-                        <td>Monday - Friday</td>
+                        <h3>Send us a message</h3>
 
-                        <td>9 AM - 6 PM</td>
-                    </tr>
+                        <section class="inputs">
 
-                    <tr>
-                        <td>Saturday - Sunday</td>
+                            <label for="fullname">Full Name</label>
 
-                        <td>Closed.</td>
-                    </tr>
+                            <input type="text" name="fullname" id="fullname">
 
-                </table>
+                        </section>
 
-            </section>
+                        <section class="inputs">
 
-            <section>
+                            <label for="e-mail">e-Mail</label>
 
-                <h3>Location</h3>
+                            <input type="text" name="email" id="email">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.599793006095!2d-75.76252685198924!3d45.348559410945455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1str!2sca!4v1690954745194!5m2!1str!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
 
-            </section>
+                        <section class="inputs">
+
+                            <label for="message">Message</label>
+                            <!-- input changed into textarea -->
+                            <textarea type="text" name="message" id="message">
+
+                            </textarea>
+
+                        </section>
+
+                        <button type="submit" class="sendbutton">
+
+                            Send
+
+                        </button>
+
+                    </div>                
+
+                    <section class="hoursection">
+
+                        <h3>Hours of operation</h3>
+
+                        <table class="table">
+
+                            <tr>
+                                <th>Days</th>
+
+                                <th>Hours</th>
+                            </tr>
+
+                            <tr>
+                                <td>Monday - Friday</td>
+
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday - Sunday</td>
+
+                                <td>Closed.</td>
+                            </tr>
+
+                        </table>
+
+                    </section>
+
+                    <section class="locationsection">
+
+                        <h3>Location</h3>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.599793006095!2d-75.76252685198924!3d45.348559410945455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1str!2sca!4v1690954745194!5m2!1str!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </section>
+
+                </div>
+
+            </div>
             
         </main>
 
         <footer>
-        &copy; Copyright Three Star Media, 2020
-        <p> All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a> </p>
+        
+            <div class="pageclass">
+
+                <p> 
+                    &copy; Copyright Three Star Media, 2020
+                </p>
+
+                <p>
+                    All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+                </p>
+
+            </div>
+
         </footer>
 
     </div>
