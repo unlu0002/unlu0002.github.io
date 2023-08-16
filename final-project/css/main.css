@@ -451,6 +451,7 @@ footer {
 
 footer a {
     text-decoration: underline;
+    color: #C78C06;
 }
 
 /* Add a min-width media query for the screen size of 760px and above */
